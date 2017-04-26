@@ -19,7 +19,7 @@
         </span>
         <input type="text" class="form-control" ng-model="main.searchInput">
     </div>
-    <!--List of Shows -->
+    <!--List of Contestents -->
     <h3>Leader Board</h3>
     <ul class="list-group">
         <li class="list-group-item" ng-repeat="contestent in main.contestents | filter:main.searchInput | orderBy:main.order.key:main.order.reverse"><span class="glyphicon glyphicon-star" ng-if="game.favorite"></span> {{contestent.name}} <span class="badge">{{contestent.wins}}</span></li>
@@ -27,7 +27,7 @@
     <!-- Order Choice -->
     <select class="form-control pull-right" ng-model="main.order" ng-options="order as order.name for order in main.orders"></select>
     <div class="clearfix"></div>
-    <!-- Add a new game -->
+    <!-- Add a new Contestent -->
     <h3>Add a new Contestent</h3>
     <form name="main.addForm" class="form" ng-submit="main.addContestent()">
         <div class="form-group">
