@@ -71,3 +71,12 @@ angular.module('app').controller('MainController', function(){
     vm.new = {};
   };
 });
+
+
+// Logic for adding 1 game point to contestants already in the Leaderboard:
+
+// Games winner > +1 win in Leaderboard (Need to define syntax)
+
+// if game.winner in main.games ===  contestant.name in main.contestants {
+//   (+1 to contestant.wins in main.contestants);
+// }
