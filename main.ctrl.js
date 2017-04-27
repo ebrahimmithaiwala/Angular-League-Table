@@ -77,6 +77,6 @@ angular.module('app').controller('MainController', function(){
 
 // Games winner > +1 win in Leaderboard (Need to define syntax)
 
-// if game.winner in main.games ===  contestant.name in main.contestants {
-//   (+1 to contestant.wins in main.contestants);
+// if games.winner in main.games ===  contestants.name in main.contestants {
+//   (+1 to contestants.wins in main.contestants);
 // }
