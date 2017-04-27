@@ -1,63 +1,8 @@
-// angular.module('app').controller("MainController", function(){
-//   var vm = this;
-//   vm.title = 'AngularJS Tutorial Example';
-//   vm.searchInput = '';
-//   vm.artists = [
-//     {
-//       name: 'Miles Davis',
-//       genre: 'Jazz',
-//       favourite: true
-//     },
-//     {
-//       name: 'Tom Misch',
-//       genre: 'New jazz',
-//       favourite: true
-//     },
-//     {
-//       name: 'J Dilla',
-//       genre: 'Hip Hop',
-//       favourite: false
-//     },
-//     {
-//       name: 'Chet Faker',
-//       genre: 'Hip Hop',
-//       favourite: true
-//     },
-//     {
-//       title: 'Snarky Puppy',
-//       genre: 'Jazz/Neo Soul',
-//       favourite:
-//     }
-//   ];
-//
-//   vm.orders = [
-//     {
-//       id: 1,
-//       artist: 'Name Ascending',
-//       key: 'name',
-//       reverse: false
-//     },
-//     {
-//       id: 2,
-//       artist: 'Name Descending',
-//       key: 'name',
-//       reverse: true
-//     }
-//   ];
-//   vm.order = vm.orders[0];
-//   vm.new = {};
-//   vm.addArtist = function() {
-//     vm.artists.push(vm.new);
-//     vm.new = {};
-//   };
-// });
-
-
 angular.module('app').controller('MainController', function(){
   var vm = this;
   vm.title = 'Ping Pong Leaderboard';
   vm.searchInput = '';
-  vm.contestents = [
+  vm.contestants = [
     {
       name: 'George',
       wins: 25,
@@ -100,8 +45,8 @@ angular.module('app').controller('MainController', function(){
   ];
   vm.order = vm.orders[0];
   vm.new = {};
-  vm.addContestent = function() {
-    vm.contestents.push(vm.new);
+  vm.addContestant = function() {
+    vm.contestants.push(vm.new);
     vm.new = {};
   };
 });

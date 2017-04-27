@@ -22,14 +22,14 @@
     <!--List of Contestents -->
     <h3>Leader Board</h3>
     <ul class="list-group">
-        <li class="list-group-item" ng-repeat="contestent in main.contestents | filter:main.searchInput | orderBy:main.order.key:main.order.reverse"><span class="glyphicon glyphicon-star" ng-if="game.favorite"></span> {{contestent.name}} <span class="badge">{{contestent.wins}}</span></li>
+        <li class="list-group-item" ng-repeat="contestant in main.contestants | filter:main.searchInput | orderBy:main.order.key:main.order.reverse"><span class="glyphicon glyphicon-star" ng-if="game.favorite"></span> {{contestant.name}} <span class="badge">{{contestant.wins}}</span></li>
     </ul>
     <!-- Order Choice -->
     <select class="form-control pull-right" ng-model="main.order" ng-options="order as order.name for order in main.orders"></select>
     <div class="clearfix"></div>
     <!-- Add a new Contestent -->
-    <h3>Add a new Contestent</h3>
-    <form name="main.addForm" class="form" ng-submit="main.addContestent()">
+    <h3>Add a new Contestant</h3>
+    <form name="main.addForm" class="form" ng-submit="main.addContestant()">
         <div class="form-group">
             <label>Name</label>
             <input type="text" class="form-control" ng-model="main.new.name" required />
@@ -46,6 +46,7 @@
                 <button class="btn btn-success pull-right"><span class="glyphicon glyphicon-plus-sign"></span> Add</button>
             </div>
         </div>
+
 
     </form>
 </div>
