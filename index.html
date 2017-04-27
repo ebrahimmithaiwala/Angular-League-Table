@@ -22,7 +22,7 @@
     <!--List of Contestents -->
     <h3>Leader Board</h3>
     <ul class="list-group">
-        <li class="list-group-item" ng-repeat="contestant in main.contestants | filter:main.searchInput | orderBy:main.order.key:main.order.reverse"><span class="glyphicon glyphicon-star" ng-if="game.favorite"></span> {{contestant.name}} <span class="badge">{{contestant.wins}}</span></li>
+        <li class="list-group-item" ng-repeat="contestant in main.contestants | filter:main.searchInput | orderBy:main.order.key:main.order.reverse"><span class="glyphicon glyphicon-star"></span> {{contestant.name}} <span class="badge">{{contestant.wins}}</span></li>
     </ul>
 
     <!-- Order Choice -->
@@ -30,9 +30,9 @@
     <div class="clearfix"></div>
 
     <!-- List Of games -->
-    <h3>Past Games</h3>
+    <h3>Games Played</h3>
     <ul class="list-group">
-        <li class="list-group-item" ng-repeat="game in main.games | filter:main.searchInput | orderBy:main.order.key:main.order.reverse"><span class="glyphicon glyphicon-star" ng-if="game.favorite"></span> {{game.names}} <span class="badge">{{game.winner}}</span></li>
+        <li class="list-group-item" ng-repeat="game in main.games | filter:main.searchInput | orderBy:main.order.key:main.order.reverse"><span></span> {{game.names}} <span class="badge">{{game.winner}}</span></li>
     </ul>
 
     <!-- Add a new Contestent -->
