@@ -6,27 +6,44 @@ angular.module('app').controller('MainController', function(){
     {
       name: 'George',
       wins: 25,
-      favorite: true
     },
     {
       name: 'Mike',
       wins: 23,
-      favorite: false
     },
     {
       name: 'Anna',
       wins: 18,
-      favorite: true
     },
     {
       name: 'Ismael',
       wins: 6,
-      favorite: true
     },
     {
       name: 'Lucy',
       wins: 2,
-      favorite: false
+    }
+  ];
+  vm.games = [
+    {
+      names: 'George vs Steve',
+      winner: 'George'
+    },
+    {
+      names: 'Mike vs Jessica',
+      winner: 'Anna'
+    },
+    {
+      names: 'Lucy vs Ismael',
+      winner: 'Ismael'
+    },
+    {
+      names: 'George vs Lucy',
+      winner: 'George'
+    },
+    {
+      names: 'Mike vs George',
+      winner: 'George'
     }
   ];
   vm.orders = [
@@ -47,6 +64,10 @@ angular.module('app').controller('MainController', function(){
   vm.new = {};
   vm.addContestant = function() {
     vm.contestants.push(vm.new);
+    vm.new = {};
+  };
+  vm.addGame = function() {
+    vm.games.push(vm.new);
     vm.new = {};
   };
 });
